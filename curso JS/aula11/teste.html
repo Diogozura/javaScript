@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qual seu país?</title>
+</head>
+<body>
+    <h1>bora lá</h1>
+    me diz de onde vem amigo
+    <input type="text" name="txtpais" id="txtapais">
+    <input type="button" value="verificar" onclick="conferir()">
+    <div id="res">
+
+    </div>
+
+    <script>
+     
+        function conferir() {
+            
+        var pais = document.querySelector('input#txtapais')
+                console.log (`Vivendo em ${pais.value}`)
+            if(pais.value == 'Brasil'){
+                console.log('você é brasileiro!')
+             } else {
+                console.log ('você é estrangeiro ')
+             }
+                res.innerHTML =  `${pais.value}`
+        }
+    </script>
+</body>
+</html>

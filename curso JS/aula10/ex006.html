@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color:rgba(51, 16, 131, 0.685)
+        }
+
+        div#area {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18pt;
+            background: rgb(94, 190, 102);
+            color: rgb(253, 253, 253);
+            width:400px;
+            height: 200px;
+            line-height: 200px;
+            text-align: justify;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        intereja...
+    </div>
+    <script>
+         var a = window.document.getElementById('area')
+         a.addEventListener('click', clicar)
+         a.addEventListener('mouseover', entrar)
+         a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'quem clicou é gay '
+            a.style.background = 'red';
+        }
+        function entrar() {
+                a.innerText = 'oii gatinho'
+                
+
+        }
+        function sair() {
+            a.innerText = 'saiuu'
+            a.style.background = 'rgb(94, 190, 102)';
+        }
+    </script>
+</body>
+</html>
